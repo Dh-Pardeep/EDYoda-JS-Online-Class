@@ -10,6 +10,7 @@
 <body>
 
     <h1>JAVA SCRIPT</h1>
+    <!-- day 1 -->
     <script>
         //1 Java script is a scripiting language 
         //2 dynamic page 
@@ -103,17 +104,122 @@
                 console.log(a + " is odd.");
             }
         }
-
-
-
-
-
-
-
-
-
     </script>
+    <!-- day 2 -->
+    <script>
+        // length
+        {
+            var a = "aaaaaaaaaaaaaaaaaaaaaaaaa"
+            console.log(a.length);
 
+        }
+        //slice
+        {
+            var a = "abcdefghijkl"
+            console.log(a.slice(1))
+            console.log(a.slice(1, 4))
+            console.log(a.slice(-4))//show nagtive value
+        }
+        //substring
+        {
+            var a = "abcdefghijkl"
+            console.log(a.substring(1))
+            console.log(a.substring(-4))//not show nagtive value
+        }
+        //substr
+        {
+            var a = "abcdefghijkl"
+            console.log(a.substr(1))
+            console.log(a.substr(1, 4)) //both add in valur 1,4
+        }
+        //replace
+        {
+            var a = "abcdefghijkl"
+            console.log(a.replace("a", "b")) //first letter a change for b
+        }
+        //replace
+        {
+            var a = "abcdefghijkla"
+            console.log(a.replaceAll("a", "b")) //all letter a change for b
+        }
+
+        //converting thr string 
+
+        //toUpperCase
+        {
+            var a = "abcdefghijkla"
+            console.log(a.toUpperCase());
+        }
+        //toLowerCase
+        {
+            var a = "ABCEDJJVJSDI"
+            console.log(a.toLowerCase());
+        }
+
+
+
+        //concat   //no of the string sapaarted by comma
+        {
+            var a = "abcefeifn"
+            var b = "abcefeifn"
+            console.log(a.concat(b, a));
+        }
+
+        //trim
+        {
+            var a = "        ABCEDJJVJSDI           "
+            console.log(a.trim());
+        }
+
+        //trimstart
+        {
+            var a = "        ABCEDJJVJSDI           "
+            console.log(a.trimStart());
+        }
+        //trimend
+        {
+            var a = "        ABCEDJJVJSDI           "
+            console.log(a.trimEnd());
+        }
+
+        //chat at
+        {
+            var a = "abcclasm"
+            console.log(a.charAt(1)); //show in index no
+        }
+        //chatcodeat
+        {
+            var a = "abcclasm"
+            console.log(a.charCodeAt("m")); //character code all world
+        }
+
+        //null and undefined
+
+        // console.log(aaa) //aaa is not defined
+
+        //undefined
+        {
+            var x;
+            console.log(x);//undefined =>who value is not present at all. 
+            console.log(x+x);//console show NaN
+            console.log(x+"hema");//console show undefinedhema
+            
+        } 
+
+        //null
+        {
+            var a = null
+            console.log(a);//null => null tell us the value in internelly not persent.
+            console.log(typeof (a)); //console show null by object 
+            console.log(a+a); //console show a zero
+        }
+</script>
+<!-- day 3 -->
+<script>
+
+
+    
+</script>
 </body>
 
 </html>
