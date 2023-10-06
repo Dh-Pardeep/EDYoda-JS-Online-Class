@@ -201,25 +201,92 @@
         {
             var x;
             console.log(x);//undefined =>who value is not present at all. 
-            console.log(x+x);//console show NaN
-            console.log(x+"hema");//console show undefinedhema
-            
-        } 
+            console.log(x + x);//console show NaN
+            console.log(x + "hema");//console show undefinedhema
+
+        }
 
         //null
         {
             var a = null
             console.log(a);//null => null tell us the value in internelly not persent.
             console.log(typeof (a)); //console show null by object 
-            console.log(a+a); //console show a zero
+            console.log(a + a); //console show a zero
         }
-</script>
-<!-- day 3 -->
-<script>
+    </script>
+    <!-- day 3 -->
+    <script>
+        {//operator
+            var a = 10;
+            var b = 20;
+            console.log(a + b);// 0
+            console.log(a - b);// -10
+            console.log(a * b);// 200
+            console.log(a / b);// 0.5
+            console.log(a++);// 10
+            console.log(a--);// 11
+            console.log(++a);// 11
+            console.log(--a);// 10
+            console.log(a ** b);// 100000000000000000000
+            console.log(a % b);// 10
+        }
 
+        {//ternary operator
+            var a = 10;
+            var b = 20;
+            console.log(a = 10 ? (b >= 20 ? true : false) : false);
+            //true
+        }
+        {  //converting string to number
+            var a = "10";
+            console.log(typeof (Number(a))); //number
+            console.log(Number(a)); //10
+        }
+        {//converting seen float type string change number
+            var a = "10.10"
+            console.log(typeof (Number(a))); //number
+            console.log(Number(a));  //10.1
+        } {
+            var a = "10 10"
+            console.log(typeof (Number(a)));//number
+            console.log(Number(a)); //NaN
+        }
+        //converting number to string
+        {
+            var a = 10;
+            console.log(typeof (String(a))); //string
+            console.log(String(a));//10
+            console.log(String(a + 10)); //20
+        }
+        //bolleam to number
+        {
+            var a = true;
+            var b = false;
+            console.log(typeof (Number(a)));//number
+            console.log(Number(a));//1
+            console.log(Number(b));//0
+        }
+        //bollean to string
+        {
+            var a = false;
+            console.log(typeof (String(a)));// string
+            console.log(String(a));// false
+        }
 
-    
-</script>
+        {
+            console.log(5 + null);//5
+            console.log("5" + null);//5null
+            console.log("5" + 10);//510
+            console.log("5" - 10);//-5
+            console.log("5" * 10);//50
+            console.log("5" * "10");//50
+        }
+        {//any string converting to boolean show in true
+            var a = "pardeep"
+            console.log(typeof (Boolean(a)));//boolean
+            console.log(Boolean(a));//true
+        }
+    </script>
 </body>
 
 </html>
